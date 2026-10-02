@@ -2,9 +2,14 @@
 
 - セムカンカメラから参照するHTMLを管理する
 - github pages でホスティングする
+    - github pages でのuriを小文字で統一するため、リポジトリ名も小文字にしている
 - Jekyll を使用して静的ページを生成する
 
 ページの元ファイルは `pages/` に置き、公開 URL は各ファイルの `permalink` で指定する。
+
+# github pages 設定
+
+https://github.com/ablecomputer/semkan-camera-docs/settings/pages
 
 # 事前準備
 
