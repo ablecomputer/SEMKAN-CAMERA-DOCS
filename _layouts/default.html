@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | escape }} | セムカンカメラ</title>
+    <style>
+      :root { color-scheme: light; }
+      body { margin: 0; background: #f7f8fa; color: #243044; font-family: system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; line-height: 1.8; }
+      main { box-sizing: border-box; width: min(100% - 2rem, 52rem); margin: 2rem auto; padding: clamp(1.25rem, 4vw, 3rem); background: #fff; border: 1px solid #e1e5eb; border-radius: 12px; }
+      h1 { margin-top: 0; font-size: clamp(1.5rem, 4vw, 2rem); }
+      h2 { margin-top: 2.5rem; padding-bottom: .3rem; border-bottom: 1px solid #d9dfe7; font-size: 1.2rem; }
+      p, li { overflow-wrap: anywhere; }
+      ol, ul { padding-left: 1.7em; }
+      li { margin: .5rem 0; }
+      table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+      th, td { padding: .5rem .7rem; border: 1px solid #cbd3dd; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+      th { width: 10rem; background: #f2f5f8; font-weight: 600; }
+      a { color: #145ca8; }
+      a:focus-visible { outline: 3px solid #145ca8; outline-offset: 3px; }
+      @media (max-width: 480px) { main { width: 100%; margin: 0; border: 0; border-radius: 0; } th { width: 6rem; } }
+    </style>
+  </head>
+  <body>
+    <main>{{ content }}</main>
+  </body>
+</html>
