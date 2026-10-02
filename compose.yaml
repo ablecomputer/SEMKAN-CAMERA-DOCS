@@ -1,0 +1,14 @@
+services:
+  jekyll:
+    build: .
+    ports:
+      - "127.0.0.1:4000:4000"
+    volumes:
+      - .:/app
+    command: sh -c "bundle install && exec bundle exec jekyll serve --host 0.0.0.0 --force_polling"
+    networks:
+      - docs
+
+networks:
+  docs:
+    driver: bridge

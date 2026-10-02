@@ -8,7 +8,7 @@ RUN apt-get update \
 
 WORKDIR /app
 
-COPY Gemfile Gemfile.lock ./
+COPY Gemfile* ./
 
 # Gemfileを使用して必要なライブラリをインストール
 RUN bundle install
