@@ -4,6 +4,8 @@
 - github pages でホスティングする
 - Jekyll を使用して静的ページを生成する
 
+ページの元ファイルは `pages/` に置き、公開 URL は各ファイルの `permalink` で指定する。
+
 # 事前準備
 
 - Docker Desktop をインストールして docker コマンドを使用できるようにしておく
